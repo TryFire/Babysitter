@@ -11,6 +11,7 @@ import android.view.ViewTreeObserver;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.GridLayout;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.function.babysitter.R;
 import com.example.function.babysitter.Utils;
@@ -24,6 +25,8 @@ public class CardDetailActivity extends BaseActivity {
     View contentRoot;
     @InjectView(R.id.sq_iv)
     SquaredImageView squaredImageView;
+    @InjectView(R.id.tv_detail)
+    TextView textViewDetail;
     public static final String ARG_DRAWING_START_LOCATION = "animation";
     public static final String TIME_ITEM = "time";
 
@@ -53,14 +56,19 @@ public class CardDetailActivity extends BaseActivity {
     private void setupImageView(int position) {
         if(position % 5 == 0) {
             squaredImageView.setImageResource(R.drawable.one);
+            textViewDetail.setText(getString(R.string.detail_one));
         } else if (position % 5 == 1) {
             squaredImageView.setImageResource(R.drawable.two);
+            textViewDetail.setText(getString(R.string.detail_one));
         } else if (position % 5 == 2) {
             squaredImageView.setImageResource(R.drawable.three);
+            textViewDetail.setText(getString(R.string.detail_one));
         } else if (position % 5 == 3) {
             squaredImageView.setImageResource(R.drawable.four);
+            textViewDetail.setText(getString(R.string.detail_one));
         } else {
             squaredImageView.setImageResource(R.drawable.five);
+            textViewDetail.setText(getString(R.string.detail_one));
         }
     }
 

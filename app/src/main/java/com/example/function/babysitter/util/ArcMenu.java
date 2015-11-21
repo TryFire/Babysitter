@@ -6,7 +6,9 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.util.TypedValue;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
@@ -124,6 +126,27 @@ public class ArcMenu extends ViewGroup implements View.OnClickListener {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            if (this.mCurrentStatus == Status.CLOSE)
+                return super.onTouchEvent(event);
+
+        }
+        if (event.getAction() == MotionEvent.ACTION_UP) {
+            toggleMenu(140);
+            return true;
+        }
+        return true;
+
+    }
+
+
+    @Override
+    public void setOnTouchListener(OnTouchListener l) {
+        super.setOnTouchListener(l);
+    }
+
     /**
      * 中心按钮点击事件及动画
      *
@@ -165,8 +188,8 @@ public class ArcMenu extends ViewGroup implements View.OnClickListener {
 
                 super.setBackgroundColor(getResources().getColor(R.color.background_gray));
 
-                animatorX = ObjectAnimator.ofFloat(childView, "translationX" , (float)(mRadius * Math.cos(belta * i)), 0f);
-                animatorY = ObjectAnimator.ofFloat(childView, "translationY", (float)(mRadius * Math.sin(belta * i)), 0f);
+                animatorX = ObjectAnimator.ofFloat(childView, "translationX", (float) (mRadius * Math.cos(belta * i)), 0f);
+                animatorY = ObjectAnimator.ofFloat(childView, "translationY", (float) (mRadius * Math.sin(belta * i)), 0f);
                 animSet.setDuration(duration);
                 animSet.setInterpolator(new OvershootInterpolator());
                 animSet.play(animatorX).with(animatorY);
@@ -177,40 +200,13 @@ public class ArcMenu extends ViewGroup implements View.OnClickListener {
                 super.setBackground(background);
                 childView.setClickable(false);
                 childView.setFocusable(false);
-                animatorX = ObjectAnimator.ofFloat(childView, "translationX", 0f ,(float)(mRadius * Math.cos(belta * i)));
-                animatorY = ObjectAnimator.ofFloat(childView, "translationY", 0f, (float)(mRadius * Math.sin(belta * i)));
+                animatorX = ObjectAnimator.ofFloat(childView, "translationX", 0f, (float) (mRadius * Math.cos(belta * i)));
+                animatorY = ObjectAnimator.ofFloat(childView, "translationY", 0f, (float) (mRadius * Math.sin(belta * i)));
                 animSet.setDuration(duration);
                 animSet.play(animatorX).with(animatorY);
                 animSet.start();
             }
 
-
-
-
-           /* tranAnim.setAnimationListener(new Animation.AnimationListener() {
-                @Override
-                public void onAnimationStart(Animation animation) {
-
-                }
-
-                @Override
-                public void onAnimationEnd(Animation animation) {
-                    if (mCurrentStatus == Status.CLOSE) {
-                        childView.setVisibility(View.GONE);
-                    }
-                }
-
-                @Override
-                public void onAnimationRepeat(Animation animation) {
-
-                }
-            });
-
-            RotateAnimation rotateAnim = new RotateAnimation(0, 720, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-            rotateAnim.setDuration(duration);
-            rotateAnim.setFillAfter(true);
-
-*/
             final int pos = i + 1;
             childView.setOnClickListener(new OnClickListener() {
                 @Override
@@ -219,7 +215,7 @@ public class ArcMenu extends ViewGroup implements View.OnClickListener {
                         mMenuItemClickListener.onClick(childView, pos);
                     }
                     //changeStatus();
-                    toggleMenu(120);
+                    toggleMenu(140);
                 }
             });
         }
@@ -245,8 +241,8 @@ public class ArcMenu extends ViewGroup implements View.OnClickListener {
             childView.setVisibility(INVISIBLE);
             childView.setClickable(false);
             childView.setFocusable(false);
-            ObjectAnimator animatorX = ObjectAnimator.ofFloat(childView, "translationX" , (float)(mRadius * Math.cos(belta * i)), 0f);
-            ObjectAnimator animatorY = ObjectAnimator.ofFloat(childView, "translationY", (float)(mRadius * Math.sin(belta * i)), 0f);
+            ObjectAnimator animatorX = ObjectAnimator.ofFloat(childView, "translationX", (float) (mRadius * Math.cos(belta * i)), 0f);
+            ObjectAnimator animatorY = ObjectAnimator.ofFloat(childView, "translationY", (float) (mRadius * Math.sin(belta * i)), 0f);
             animatorX.start();
             animatorY.start();
             childView.setClickable(true);

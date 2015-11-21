@@ -46,6 +46,7 @@ public class TimeTreeFrag extends Fragment implements TimeTreeAdapter.OnCardItem
         timeItems = new ArrayList<>();
         for (int i=0; i<15; i++) {
             TimeItem timeItem = new TimeItem();
+            timeItem.setDate("11-" + (21 - i));
             if(i % 5 == 0) {
                 timeItem.setTimeLineTitle("curious baby");
                 timeItem.setId(i % 5);

@@ -6,5 +6,22 @@
     <string name="title_activity_user_profile">UserProfileActivity</string>
     <string name="user_profile_photo">http://news.xinhuanet.com/gongyi/titlepic/125889048_title1n.jpg</string>
     <string name="title_activity_card_detail">CardDetailActivity</string>
+    <string name="comments_activity">CommentsActivity</string>
+    <string name="welcome_activity">WelcomeActivity</string>
+    <string name="register_activity">RegisterActivity</string>
     <string name="baby_detail">sweater baby! Today my baby went to the park and we have a good time, what a happy day!</string>
+    <string name="birth">本宝宝今天出生了,本宝宝今天出生了本宝宝今天出生了本宝宝今天出生了本宝宝今天出生了</string>
+    <string name="baby_one">宝贝儿子今天刚好两个月了，带你去拍了艺术照，是不是很帅呀。早上我醒来的时候，你竟然在爬来爬去，像一只小狗狗，哈哈哈</string>
+    <string name="baby_two">你个小色狼，今天带你去逛公园，一看见美女你就笑，哼哼，眼睛还盯着眨都不带眨一下的，小色狼</string>
+    <string name="baby_three">你小子，年纪不大，还学会吐槽了呀。。</string>
+    <string name="baby_four">宝宝，你嘴好馋的哟，看见别人吃的你就张大嘴巴，我也是醉了，以后成了小胖子可别怪我不要你哦~~</string>
+    <string name="baby_five">嘿~小伙子，屁事儿不懂还偷玩我电脑，可别往上尿尿就好，不然把你卖掉去。。</string>
+    <string name="detail_one">宝贝女儿呀，你的眼睛怎么这么这么这么大的，你让妈妈怎么抱着你见人呀！宝宝今儿虽然还不会走路，但是已经会爬行了，
+        又长大了呢。。今天送给你一个娃娃，你可开心了呢，一直盯着它不放。想动它，但又不敢动，哈哈，你还怕那娃娃。我觉得你戴着这帽子非常非常可爱好卡
+        因为是我织的呀呀呀~~</string>
+    <string name="detail_two"></string>
+    <string name="detail_three"></string>
+    <string name="detail_four"></string>
+    <string name="detail_five"></string>
+
 </resources>

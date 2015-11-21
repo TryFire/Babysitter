@@ -7,4 +7,8 @@
     <dimen name="global_menu_avatar_size">64dp</dimen>
     <dimen name="timeline_margin_left">15dp</dimen>
     <dimen name="cardView_inner_padding">4dp</dimen>
+
+    <dimen name="comment_avatar_size">56dp</dimen>
+
+    <dimen name="default_elevation">8dp</dimen>
 </resources>

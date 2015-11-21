@@ -19,7 +19,7 @@
             android:layout_height="35dp"
             app:tabIndicatorColor="@color/normal_white"
             app:tabSelectedTextColor="@color/normal_white"
-            app:tabTextColor="@color/normal_white"
+            app:tabTextColor="@color/color_1"
             android:background="#feb8f8"/>
 
     </android.support.design.widget.AppBarLayout>
@@ -35,30 +35,35 @@
         android:id="@+id/arc_menu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:margin_bottom="30dp"
-        app:margin_right="30dp"
-        app:radius="180dp">
+        app:margin_bottom="20dp"
+        app:margin_right="20dp"
+        app:radius="130dp">
 
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_instagram_white" />
+            android:src="@drawable/camera" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_instagram_white" />
+            android:src="@drawable/mic" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_instagram_white" />
+            android:src="@drawable/location" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_instagram_white" />
+            android:src="@drawable/type" />
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/icon_plus" />
 
 
     </com.example.function.babysitter.util.ArcMenu>

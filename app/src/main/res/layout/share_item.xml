@@ -1,79 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp">
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <ImageView
+            android:id="@+id/share_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_feed_top"/>
+
+        <com.example.function.babysitter.util.SquaredImageView
+            android:id="@+id/content_photo"
+            android:scaleType="centerCrop"
             android:layout_width="match_parent"
-            android:layout_height="250dp">
+            android:layout_height="match_parent"
+            android:src="@drawable/child" />
 
-            <ImageView
-                android:id="@+id/content_photo"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/child" />
+        <View
+            android:id="@+id/viewBackgroundLike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_like_circle_background"
+            android:visibility="gone" />
 
-        </RelativeLayout>
+        <ImageView
+            android:id="@+id/imageViewLike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/ic_heart_outline_white"
+            android:visibility="gone" />
+
+        <TextView
+            android:padding="15dp"
+            android:id="@+id/content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="16sp"
+            android:text="@string/birth"
+            android:textColor="#838283" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/like_btn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_heart_outline_grey"/>
+
+
+            <ImageButton
+                android:id="@+id/comment_btn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_comment_outline_grey"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
                 android:orientation="horizontal"
                 android:padding="4dp">
 
                 <ImageView
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:src="@drawable/ic_heart_outline_grey" />
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_like" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/tv_licks"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:textColor="@color/style_color_primary_dark"
                     android:gravity="center_vertical"
                     android:text="14 like" />
 
-            </LinearLayout>
+        </LinearLayout>
 
 
-            <TextView
-                android:id="@+id/content_tv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:text="本宝宝今天出生了,本宝宝今天出生了本宝宝今天出生了本宝宝今天出生了本宝宝今天出生了"
-                android:textColor="#000000" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-
-                <ImageView
-                    android:id="@+id/like_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/ic_heart_outline_grey" />
-
-
-                <ImageView
-                    android:id="@+id/comment_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_comment_outline_grey" />
-            </LinearLayout>
 
         </LinearLayout>
 

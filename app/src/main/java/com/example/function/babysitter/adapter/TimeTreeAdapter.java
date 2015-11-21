@@ -57,7 +57,13 @@ public class TimeTreeAdapter extends RecyclerView.Adapter<TimeTreeAdapter.ItemVi
         runEnterAnimation(itemViewHolder.babyCard, i);
         itemViewHolder.babyCard.setTag(i);
 
+        if (i % 2 == 0) {
+            itemViewHolder.footView.setImageDrawable(context.getResources().getDrawable(R.drawable.baby_feet_left));
+        } else {
+            itemViewHolder.footView.setImageDrawable(context.getResources().getDrawable(R.drawable.baby_feet_right));
+        }
         itemViewHolder.textView.setText(timeItemsList.get(i).getTimeLineTitle());
+        itemViewHolder.tvDate.setText(timeItemsList.get(i).getDate());
         itemViewHolder.imageView.setImageDrawable(timeItemsList.get(i).getTimeLinePhoto());
 
         itemViewHolder.babyCard.setOnClickListener(this);
@@ -103,12 +109,17 @@ public class TimeTreeAdapter extends RecyclerView.Adapter<TimeTreeAdapter.ItemVi
         ImageView imageView;
         TextView textView;
         View babyCard;
+        TextView tvDate;
+        ImageView footView;
 
         public ItemViewHolder(View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.timeLinePhoto);
             textView = (TextView) itemView.findViewById(R.id.timeLineTitle);
             babyCard = itemView.findViewById(R.id.baby_card);
+            tvDate = (TextView) itemView.findViewById(R.id.tv_date);
+            footView = (ImageView) itemView.findViewById(R.id.foot_print);
+
         }
     }
 }

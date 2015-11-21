@@ -8,6 +8,15 @@ import android.graphics.drawable.Drawable;
 public class ShareItem {
     private Drawable sharePhoto;
     private String shareContent;
+    private Drawable shareAvatar;
+
+    public Drawable getShareAvatar() {
+        return shareAvatar;
+    }
+
+    public void setShareAvatar(Drawable shareAvatar) {
+        this.shareAvatar = shareAvatar;
+    }
 
     public Drawable getSharePhoto() {
         return sharePhoto;
