@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="btn_fab_size">56dp</dimen>
+    <dimen name="btn_fab_margins">16dp</dimen>
+    <dimen name="global_menu_avatar_size">64dp</dimen>
+    <dimen name="timeline_margin_left">15dp</dimen>
+    <dimen name="cardView_inner_padding">4dp</dimen>
+</resources>

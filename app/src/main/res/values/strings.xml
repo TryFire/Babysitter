@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Babysitter</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="user_profile_photo">http://news.xinhuanet.com/gongyi/titlepic/125889048_title1n.jpg</string>
+    <string name="title_activity_card_detail">CardDetailActivity</string>
+    <string name="baby_detail">sweater baby! Today my baby went to the park and we have a good time, what a happy day!</string>
+</resources>
