@@ -59,16 +59,16 @@ public class CardDetailActivity extends BaseActivity {
             textViewDetail.setText(getString(R.string.detail_one));
         } else if (position % 5 == 1) {
             squaredImageView.setImageResource(R.drawable.two);
-            textViewDetail.setText(getString(R.string.detail_one));
+            textViewDetail.setText(getString(R.string.detail_two));
         } else if (position % 5 == 2) {
             squaredImageView.setImageResource(R.drawable.three);
-            textViewDetail.setText(getString(R.string.detail_one));
+            textViewDetail.setText(getString(R.string.detail_three));
         } else if (position % 5 == 3) {
             squaredImageView.setImageResource(R.drawable.four);
-            textViewDetail.setText(getString(R.string.detail_one));
+            textViewDetail.setText(getString(R.string.detail_four));
         } else {
             squaredImageView.setImageResource(R.drawable.five);
-            textViewDetail.setText(getString(R.string.detail_one));
+            textViewDetail.setText(getString(R.string.detail_five));
         }
     }
 

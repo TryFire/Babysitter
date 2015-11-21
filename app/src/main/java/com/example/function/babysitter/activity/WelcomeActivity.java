@@ -117,7 +117,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
                 .translationY(0)
                 .setInterpolator(new OvershootInterpolator(1.f))
                 .setDuration(550)
-                .setStartDelay(500);
+                .setStartDelay(530);
 
         registerButton.animate()
                 .translationY(0)

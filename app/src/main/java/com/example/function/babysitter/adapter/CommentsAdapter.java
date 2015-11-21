@@ -59,7 +59,7 @@ public class CommentsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         }
 
         Picasso.with(context)
-                .load(R.drawable.ic_launcher)
+                .load(R.drawable.lolita_head)
                 .centerCrop()
                 .resize(avatarSize, avatarSize)
                 .transform(new RoundedTransformation())

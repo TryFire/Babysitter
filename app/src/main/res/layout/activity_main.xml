@@ -19,7 +19,7 @@
             android:layout_height="35dp"
             app:tabIndicatorColor="@color/normal_white"
             app:tabSelectedTextColor="@color/normal_white"
-            app:tabTextColor="@color/color_1"
+            app:tabTextColor="@color/normal_white"
             android:background="#feb8f8"/>
 
     </android.support.design.widget.AppBarLayout>
@@ -43,22 +43,22 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/camera" />
+            android:src="@drawable/icon_cam" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/mic" />
+            android:src="@drawable/icon_mic" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/location" />
+            android:src="@drawable/icon_local" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/type" />
+            android:src="@drawable/icon_pen" />
 
         <ImageView
             android:layout_width="56dp"
