@@ -11,7 +11,7 @@ import com.example.function.babysitter.R;
 /**
  * Created by KongFanyang on 2015/11/21.
  */
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends BaseActivity {
     private Button regisLoginButton;
 
     @Override
@@ -29,5 +29,19 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void setupToolBar() {
+        if(getToolbar() != null) {
+            setSupportActionBar(getToolbar());
+            getToolbar().setNavigationIcon(R.drawable.ic_menu_back);
+            getToolbar().setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
+        }
     }
 }

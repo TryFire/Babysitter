@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <include
         android:id="@+id/toolbar"
@@ -11,6 +12,8 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
         android:layout_marginTop="24dp">
 
         <EditText
@@ -23,7 +26,9 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp">
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="14dp">
 
         <EditText
             android:layout_width="match_parent"
@@ -35,7 +40,9 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp">
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="14dp">
 
         <EditText
             android:layout_width="match_parent"
@@ -44,13 +51,21 @@
 
     </android.support.design.widget.TextInputLayout>
 
+    <Spinner
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/spinner_name"
+        android:layout_width="108dp"
+        android:layout_height="40dp" />
+
+
     <Button
         android:id="@+id/regiser_login"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/selector_button_pressed"
         android:text="注 册"
         android:textColor="#ffffff"

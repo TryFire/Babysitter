@@ -144,7 +144,7 @@ public class ShareAdapter extends RecyclerView.Adapter<ShareAdapter.ItemViewHold
                     @Override
                     public void onAnimationStart(Animator animation) {
                         holder.likeBtn.setImageResource(R.drawable.ic_heart_outline_red);
-                        holder.tvLicks.setText(holder.number + 1 + " licks");
+                        holder.tvLicks.setText(holder.number + 1 + " likes");
                        // holder.likeBtn.setBackgroundResource(R.drawable.ic_heart_red);
                     }
                 });
@@ -164,7 +164,7 @@ public class ShareAdapter extends RecyclerView.Adapter<ShareAdapter.ItemViewHold
         } else {
             if (likedPositions.contains(holder.getPosition())) {
                 holder.likeBtn.setImageResource(R.drawable.ic_heart_outline_red);
-                holder.tvLicks.setText(holder.number + 1 + " licks");
+                holder.tvLicks.setText(holder.number + 1 + " likes");
                 //holder.likeBtn.setBackgroundResource(R.drawable.ic_heart_red);
             } else {
                 holder.likeBtn.setImageResource(R.drawable.ic_heart_outline_grey);

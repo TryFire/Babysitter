@@ -56,7 +56,10 @@ public class TimeTreeFrag extends Fragment implements TimeTreeAdapter.OnCardItem
                 timeItem.setId(i % 5);
                 timeItem.setTimeLinePhoto(getContext().getResources().getDrawable(R.drawable.two));
             } else if (i % 5 == 2) {
-                timeItem.setTimeLineTitle("Little Beckham");
+                timeItem.setTimeLineTitle("ds;alkfksjdf;ajsdfksfajdslfj" +
+                        "fajskdlf;jaad" +
+                        "sdfjlksadjfdksa" +
+                        "sdlkjf");
                 timeItem.setId(i % 5);
                 timeItem.setTimeLinePhoto(getContext().getResources().getDrawable(R.drawable.three));
             } else if (i % 5 == 3) {

@@ -16,8 +16,7 @@
         android:layout_height="wrap_content"
         android:textSize="25sp"
         android:textColor="@color/normal_white"
-        android:gravity="center"
         android:layout_gravity="center"
-        android:text="Babysitter"/>
+        android:text="印 迹"/>
 
 </android.support.v7.widget.Toolbar>

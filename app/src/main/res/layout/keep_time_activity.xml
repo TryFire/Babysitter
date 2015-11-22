@@ -19,8 +19,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/baby_feet_left">
+                android:layout_height="match_parent">
 
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/title_edt"
@@ -36,7 +35,12 @@
 
                 </android.support.design.widget.TextInputLayout>
 
+<ImageView
+    android:id="@+id/iv_get"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
+</ImageView>
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -60,15 +64,21 @@
                     android:orientation="horizontal">
 
                     <com.example.function.babysitter.util.CircleImageView
+                        android:layout_centerVertical="true"
                         android:id="@+id/pic_default"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/baby_feet_left" />
+                        android:src="@drawable/add_new_pic" />
 
-                    <com.example.function.babysitter.util.CircleImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_toRightOf="@+id/pic_default" />
+
+                    <TextView
+                        android:layout_marginRight="20dp"
+                        android:textSize="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="DONE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
 
                 </RelativeLayout>
 

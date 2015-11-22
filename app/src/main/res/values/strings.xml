@@ -28,4 +28,10 @@
     <string name="detail_five">今天你突然就出现在爸爸的电脑前，呆手呆脚的把玩起电脑来的，虽然啥也不懂一顿瞎按，但看你是挺高兴的样子。这么小就
         玩电脑玩这么起劲，我想你以后一定是一个程序员，当然是有女朋友的程序员</string>
 
+
+    <string-array name="spinner_name">
+        <item>宝贝妈妈</item>
+        <item>宝贝爸爸</item>
+    </string-array>
+
 </resources>

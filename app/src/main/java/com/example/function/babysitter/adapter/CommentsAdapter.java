@@ -48,13 +48,13 @@ public class CommentsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         runEnterAnimation(holder.itemView, position);
         switch (position % 3) {
             case 0:
-                ((CommentViewHolder)holder).tvComment.setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit.");
+                ((CommentViewHolder)holder).tvComment.setText("这小宝贝太可爱啦！");
                 break;
             case 1:
-                ((CommentViewHolder)holder).tvComment.setText("Cupcake ipsum dolor sit amet bear claw.");
+                ((CommentViewHolder)holder).tvComment.setText("我家小宝贝也这样啊，他们真是我们的开心宝啊");
                 break;
             case 2:
-                ((CommentViewHolder)holder).tvComment.setText("Cupcake ipsum dolor sit. Amet gingerbread cupcake. Gummies ice cream dessert icing marzipan apple pie dessert sugar plum.");
+                ((CommentViewHolder)holder).tvComment.setText("什么？你家小孩6字就要开始学编程？你们在哪家机构学的？放心吗");
                 break;
         }
 

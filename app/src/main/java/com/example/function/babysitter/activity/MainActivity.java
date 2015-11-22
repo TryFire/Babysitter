@@ -2,6 +2,7 @@ package com.example.function.babysitter.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.animation.OvershootInterpolator;
 
 import com.example.function.babysitter.R;
@@ -44,6 +46,16 @@ public class MainActivity extends BaseDrawerActivity {
             pendingIntroAnimation = true;
         }
         setUpTabLayout();
+        arcMenu.setOnMenuItemClickListener(new ArcMenu.OnMenuItemClickListener() {
+            @Override
+            public void onClick(View view, int pos) {
+                switch (pos) {
+                    case 4:
+                        Intent intent = new Intent(getApplicationContext(), KeepTime.class);
+                        startActivity(intent);
+                }
+            }
+        });
 
     }
 
